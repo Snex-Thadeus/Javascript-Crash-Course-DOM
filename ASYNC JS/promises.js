@@ -42,14 +42,19 @@ function createPost(post) {
 // init();
 
 // Async Await with Fetch
-async function fetchUsers() {
-    const res = await fetch('https://dev-feature1.teknobuilt.com/index.php?do=/apiv1/status/51/all&api_key=Ym9zY236Ym9zY28');
+async function fetchStatus() {
+    const res = await fetch('https://dev-feature1.teknobuilt.com/index.php?do=/apiv1/status/51/cwp&api_key=Ym9zY236Ym9zY28');
 
     const data = await res.json();
-
-    console.log(data);
+    // console.log(data);
+    const arr = data[Object.keys(data)[4]];
+    // console.log(arr)
+    for (i in arr){
+        console.log('status ID:', arr[i].statusId,  'Status Name:', arr[i].statusName, 'Status Color:', arr[i].color);
+    }
 }
-fetchUsers();
+fetchStatus();
+
 
 // promise.all
 // const promise1 = Promise.resolve('Hello World');
