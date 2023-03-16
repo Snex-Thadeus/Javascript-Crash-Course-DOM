@@ -86,6 +86,9 @@ console.log(todoJSON)
 
 
 //FOR LOOPS
+
+// In JavaScript, for...in is used to loop over the properties of an object, 
+// while for...of is used to loop over the values of an iterable such as an array.
 for(let i=0; i<10; i++){
     console.log(`For Loop Number: ${i}`);
 }
