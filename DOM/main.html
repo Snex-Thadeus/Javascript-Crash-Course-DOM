@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+
+    <style>
+        .submit{
+            padding: 1em 4em;
+            font-size: 1em;
+            background-color: rgba(0, 0, 0, 0.797);
+            color: whitesmoke;
+        }
+        .toggle_in{
+            color: lightcoral;
+        }
+        .toggle_out{
+            color: lightblue;
+        }
+        .input{
+            padding: 0.5em;
+            text-align: center;
+            font-size: 0.9em;;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar" data-number="0" data-name="navbarlight"></nav>
+    <nav class="navbar" data-number="1" data-name="navbardark"></nav>
+    <button class="btn">Click Me</button>
+    <input type="submit"/> <br><br>
+    <p id="para"></p>
+    <p class="para2">Increase Font Size and Color</p>
+    <div class="div1">
+        <p class="para"></p>
+        <p id="para1"></p>
+    </div>
+
+    <div class="content"></div>
+
+    <p class="toggle">Color This Text</p>
+
+    <div id="form">
+        <input type="text" placeholder="Name">
+        <input type="password" placeholder="Password">
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
